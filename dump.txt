@@ -1,0 +1,390 @@
+Array
+(
+    [headers] => WpOrg\Requests\Utility\CaseInsensitiveDictionary Object
+        (
+            [data:protected] => Array
+                (
+                    [date] => Sun, 19 Nov 2023 14:25:25 GMT
+                    [content-type] => application/json
+                    [access-control-allow-origin] => *
+                    [cache-control] => no-cache, must-revalidate
+                    [openai-model] => gpt-3.5-turbo-0613
+                    [openai-organization] => user-ayje4jlkao6gtmvnl1hu6erf
+                    [openai-processing-ms] => 31685
+                    [openai-version] => 2020-10-01
+                    [strict-transport-security] => max-age=15724800; includeSubDomains
+                    [x-ratelimit-limit-requests] => 3500
+                    [x-ratelimit-limit-tokens] => 90000
+                    [x-ratelimit-limit-tokens_usage_based] => 90000
+                    [x-ratelimit-remaining-requests] => 3499
+                    [x-ratelimit-remaining-tokens] => 89712
+                    [x-ratelimit-remaining-tokens_usage_based] => 89712
+                    [x-ratelimit-reset-requests] => 17ms
+                    [x-ratelimit-reset-tokens] => 192ms
+                    [x-ratelimit-reset-tokens_usage_based] => 192ms
+                    [x-request-id] => bacf5a051668d3e9d04da782747cc67c
+                    [cf-cache-status] => DYNAMIC
+                    [set-cookie] => Array
+                        (
+                            [0] => __cf_bm=WPUGYWZQb6QkyM0rCM6OY7gdbdJV_e8yWGPWW7frWYg-1700403925-0-AXcs0OBjpv2peS6wD1b9vsKl8lknhJW7nQU9XUdZG3Obkc2lHePcMLMCv6miwh+Q46xUl7SLoivg3HF96BAaltY=; path=/; expires=Sun, 19-Nov-23 14:55:25 GMT; domain=.api.openai.com; HttpOnly; Secure; SameSite=None
+                            [1] => _cfuvid=_kM5sup6ympJecxyFHUgF1wzWr8bt0h3rTvt74FnGZA-1700403925553-0-604800000; path=/; domain=.api.openai.com; HttpOnly; Secure; SameSite=None
+                        )
+
+                    [server] => cloudflare
+                    [cf-ray] => 82891e8eced7684d-BUD
+                    [content-encoding] => gzip
+                    [alt-svc] => h3=":443"; ma=86400
+                )
+
+        )
+
+    [body] => {
+  "id": "chatcmpl-8Md1BWuSnUvOoTjmbxF9DN0ld9Xex",
+  "object": "chat.completion",
+  "created": 1700403893,
+  "model": "gpt-3.5-turbo-0613",
+  "choices": [
+    {
+      "index": 0,
+      "message": {
+        "role": "assistant",
+        "content": "Please check out the captivating world of Silverleaf Publications, the premier destination for high-quality fiction novels that will transport you to unimaginable adventures. With our expert storytelling, impeccable editing, and exquisite design, we guarantee a remarkable literary journey like no other.\n\nAt Silverleaf Publications, we believe that every reader deserves to be captivated, their imaginations fueled with thrilling tales told through the art of incredible writing. Through meticulous attention and unmatched passion, we curate a collection of fiction novels across a wide range of genres that are sure to enthrall any reader.\n\nExperience spine-tingling suspense in our mystery novels, let passion overcome you in our-romance series or delve into"
+      },
+      "finish_reason": "stop"
+    }
+  ],
+  "usage": {
+    "prompt_tokens": 189,
+    "completion_tokens": 136,
+    "total_tokens": 325
+  }
+}
+
+    [response] => Array
+        (
+            [code] => 200
+            [message] => OK
+        )
+
+    [cookies] => Array
+        (
+            [0] => WP_Http_Cookie Object
+                (
+                    [name] => __cf_bm
+                    [value] => WPUGYWZQb6QkyM0rCM6OY7gdbdJV_e8yWGPWW7frWYg-1700403925-0-AXcs0OBjpv2peS6wD1b9vsKl8lknhJW7nQU9XUdZG3Obkc2lHePcMLMCv6miwh Q46xUl7SLoivg3HF96BAaltY=
+                    [expires] => 1700405725
+                    [path] => /
+                    [domain] => api.openai.com
+                    [port] => 
+                    [host_only] => 
+                )
+
+            [1] => WP_Http_Cookie Object
+                (
+                    [name] => _cfuvid
+                    [value] => _kM5sup6ympJecxyFHUgF1wzWr8bt0h3rTvt74FnGZA-1700403925553-0-604800000
+                    [expires] => 
+                    [path] => /
+                    [domain] => api.openai.com
+                    [port] => 
+                    [host_only] => 
+                )
+
+        )
+
+    [filename] => 
+    [http_response] => WP_HTTP_Requests_Response Object
+        (
+            [data] => 
+            [headers] => 
+            [status] => 
+            [response:protected] => WpOrg\Requests\Response Object
+                (
+                    [body] => {
+  "id": "chatcmpl-8Md1BWuSnUvOoTjmbxF9DN0ld9Xex",
+  "object": "chat.completion",
+  "created": 1700403893,
+  "model": "gpt-3.5-turbo-0613",
+  "choices": [
+    {
+      "index": 0,
+      "message": {
+        "role": "assistant",
+        "content": "Please check out the captivating world of Silverleaf Publications, the premier destination for high-quality fiction novels that will transport you to unimaginable adventures. With our expert storytelling, impeccable editing, and exquisite design, we guarantee a remarkable literary journey like no other.\n\nAt Silverleaf Publications, we believe that every reader deserves to be captivated, their imaginations fueled with thrilling tales told through the art of incredible writing. Through meticulous attention and unmatched passion, we curate a collection of fiction novels across a wide range of genres that are sure to enthrall any reader.\n\nExperience spine-tingling suspense in our mystery novels, let passion overcome you in our-romance series or delve into"
+      },
+      "finish_reason": "stop"
+    }
+  ],
+  "usage": {
+    "prompt_tokens": 189,
+    "completion_tokens": 136,
+    "total_tokens": 325
+  }
+}
+
+                    [raw] => HTTP/1.1 200 OK
+Date: Sun, 19 Nov 2023 14:25:25 GMT
+Content-Type: application/json
+Transfer-Encoding: chunked
+Connection: close
+access-control-allow-origin: *
+Cache-Control: no-cache, must-revalidate
+openai-model: gpt-3.5-turbo-0613
+openai-organization: user-ayje4jlkao6gtmvnl1hu6erf
+openai-processing-ms: 31685
+openai-version: 2020-10-01
+strict-transport-security: max-age=15724800; includeSubDomains
+x-ratelimit-limit-requests: 3500
+x-ratelimit-limit-tokens: 90000
+x-ratelimit-limit-tokens_usage_based: 90000
+x-ratelimit-remaining-requests: 3499
+x-ratelimit-remaining-tokens: 89712
+x-ratelimit-remaining-tokens_usage_based: 89712
+x-ratelimit-reset-requests: 17ms
+x-ratelimit-reset-tokens: 192ms
+x-ratelimit-reset-tokens_usage_based: 192ms
+x-request-id: bacf5a051668d3e9d04da782747cc67c
+CF-Cache-Status: DYNAMIC
+Set-Cookie: __cf_bm=WPUGYWZQb6QkyM0rCM6OY7gdbdJV_e8yWGPWW7frWYg-1700403925-0-AXcs0OBjpv2peS6wD1b9vsKl8lknhJW7nQU9XUdZG3Obkc2lHePcMLMCv6miwh+Q46xUl7SLoivg3HF96BAaltY=; path=/; expires=Sun, 19-Nov-23 14:55:25 GMT; domain=.api.openai.com; HttpOnly; Secure; SameSite=None
+Set-Cookie: _cfuvid=_kM5sup6ympJecxyFHUgF1wzWr8bt0h3rTvt74FnGZA-1700403925553-0-604800000; path=/; domain=.api.openai.com; HttpOnly; Secure; SameSite=None
+Server: cloudflare
+CF-RAY: 82891e8eced7684d-BUD
+Content-Encoding: gzip
+alt-svc: h3=":443"; ma=86400
+
+{
+  "id": "chatcmpl-8Md1BWuSnUvOoTjmbxF9DN0ld9Xex",
+  "object": "chat.completion",
+  "created": 1700403893,
+  "model": "gpt-3.5-turbo-0613",
+  "choices": [
+    {
+      "index": 0,
+      "message": {
+        "role": "assistant",
+        "content": "Please check out the captivating world of Silverleaf Publications, the premier destination for high-quality fiction novels that will transport you to unimaginable adventures. With our expert storytelling, impeccable editing, and exquisite design, we guarantee a remarkable literary journey like no other.\n\nAt Silverleaf Publications, we believe that every reader deserves to be captivated, their imaginations fueled with thrilling tales told through the art of incredible writing. Through meticulous attention and unmatched passion, we curate a collection of fiction novels across a wide range of genres that are sure to enthrall any reader.\n\nExperience spine-tingling suspense in our mystery novels, let passion overcome you in our-romance series or delve into"
+      },
+      "finish_reason": "stop"
+    }
+  ],
+  "usage": {
+    "prompt_tokens": 189,
+    "completion_tokens": 136,
+    "total_tokens": 325
+  }
+}
+
+                    [headers] => WpOrg\Requests\Response\Headers Object
+                        (
+                            [data:protected] => Array
+                                (
+                                    [date] => Array
+                                        (
+                                            [0] => Sun, 19 Nov 2023 14:25:25 GMT
+                                        )
+
+                                    [content-type] => Array
+                                        (
+                                            [0] => application/json
+                                        )
+
+                                    [access-control-allow-origin] => Array
+                                        (
+                                            [0] => *
+                                        )
+
+                                    [cache-control] => Array
+                                        (
+                                            [0] => no-cache, must-revalidate
+                                        )
+
+                                    [openai-model] => Array
+                                        (
+                                            [0] => gpt-3.5-turbo-0613
+                                        )
+
+                                    [openai-organization] => Array
+                                        (
+                                            [0] => user-ayje4jlkao6gtmvnl1hu6erf
+                                        )
+
+                                    [openai-processing-ms] => Array
+                                        (
+                                            [0] => 31685
+                                        )
+
+                                    [openai-version] => Array
+                                        (
+                                            [0] => 2020-10-01
+                                        )
+
+                                    [strict-transport-security] => Array
+                                        (
+                                            [0] => max-age=15724800; includeSubDomains
+                                        )
+
+                                    [x-ratelimit-limit-requests] => Array
+                                        (
+                                            [0] => 3500
+                                        )
+
+                                    [x-ratelimit-limit-tokens] => Array
+                                        (
+                                            [0] => 90000
+                                        )
+
+                                    [x-ratelimit-limit-tokens_usage_based] => Array
+                                        (
+                                            [0] => 90000
+                                        )
+
+                                    [x-ratelimit-remaining-requests] => Array
+                                        (
+                                            [0] => 3499
+                                        )
+
+                                    [x-ratelimit-remaining-tokens] => Array
+                                        (
+                                            [0] => 89712
+                                        )
+
+                                    [x-ratelimit-remaining-tokens_usage_based] => Array
+                                        (
+                                            [0] => 89712
+                                        )
+
+                                    [x-ratelimit-reset-requests] => Array
+                                        (
+                                            [0] => 17ms
+                                        )
+
+                                    [x-ratelimit-reset-tokens] => Array
+                                        (
+                                            [0] => 192ms
+                                        )
+
+                                    [x-ratelimit-reset-tokens_usage_based] => Array
+                                        (
+                                            [0] => 192ms
+                                        )
+
+                                    [x-request-id] => Array
+                                        (
+                                            [0] => bacf5a051668d3e9d04da782747cc67c
+                                        )
+
+                                    [cf-cache-status] => Array
+                                        (
+                                            [0] => DYNAMIC
+                                        )
+
+                                    [set-cookie] => Array
+                                        (
+                                            [0] => __cf_bm=WPUGYWZQb6QkyM0rCM6OY7gdbdJV_e8yWGPWW7frWYg-1700403925-0-AXcs0OBjpv2peS6wD1b9vsKl8lknhJW7nQU9XUdZG3Obkc2lHePcMLMCv6miwh+Q46xUl7SLoivg3HF96BAaltY=; path=/; expires=Sun, 19-Nov-23 14:55:25 GMT; domain=.api.openai.com; HttpOnly; Secure; SameSite=None
+                                            [1] => _cfuvid=_kM5sup6ympJecxyFHUgF1wzWr8bt0h3rTvt74FnGZA-1700403925553-0-604800000; path=/; domain=.api.openai.com; HttpOnly; Secure; SameSite=None
+                                        )
+
+                                    [server] => Array
+                                        (
+                                            [0] => cloudflare
+                                        )
+
+                                    [cf-ray] => Array
+                                        (
+                                            [0] => 82891e8eced7684d-BUD
+                                        )
+
+                                    [content-encoding] => Array
+                                        (
+                                            [0] => gzip
+                                        )
+
+                                    [alt-svc] => Array
+                                        (
+                                            [0] => h3=":443"; ma=86400
+                                        )
+
+                                )
+
+                        )
+
+                    [status_code] => 200
+                    [protocol_version] => 1.1
+                    [success] => 1
+                    [redirects] => 0
+                    [url] => https://api.openai.com/v1/chat/completions
+                    [history] => Array
+                        (
+                        )
+
+                    [cookies] => WpOrg\Requests\Cookie\Jar Object
+                        (
+                            [cookies:protected] => Array
+                                (
+                                    [__cf_bm] => WpOrg\Requests\Cookie Object
+                                        (
+                                            [name] => __cf_bm
+                                            [value] => WPUGYWZQb6QkyM0rCM6OY7gdbdJV_e8yWGPWW7frWYg-1700403925-0-AXcs0OBjpv2peS6wD1b9vsKl8lknhJW7nQU9XUdZG3Obkc2lHePcMLMCv6miwh+Q46xUl7SLoivg3HF96BAaltY=
+                                            [attributes] => WpOrg\Requests\Utility\CaseInsensitiveDictionary Object
+                                                (
+                                                    [data:protected] => Array
+                                                        (
+                                                            [path] => /
+                                                            [expires] => 1700405725
+                                                            [domain] => api.openai.com
+                                                            [httponly] => 1
+                                                            [secure] => 1
+                                                            [samesite] => None
+                                                        )
+
+                                                )
+
+                                            [flags] => Array
+                                                (
+                                                    [creation] => 1700403930
+                                                    [last-access] => 1700403930
+                                                    [persistent] => 
+                                                    [host-only] => 
+                                                )
+
+                                            [reference_time] => 1700403930
+                                        )
+
+                                    [_cfuvid] => WpOrg\Requests\Cookie Object
+                                        (
+                                            [name] => _cfuvid
+                                            [value] => _kM5sup6ympJecxyFHUgF1wzWr8bt0h3rTvt74FnGZA-1700403925553-0-604800000
+                                            [attributes] => WpOrg\Requests\Utility\CaseInsensitiveDictionary Object
+                                                (
+                                                    [data:protected] => Array
+                                                        (
+                                                            [path] => /
+                                                            [domain] => api.openai.com
+                                                            [httponly] => 1
+                                                            [secure] => 1
+                                                            [samesite] => None
+                                                        )
+
+                                                )
+
+                                            [flags] => Array
+                                                (
+                                                    [creation] => 1700403930
+                                                    [last-access] => 1700403930
+                                                    [persistent] => 
+                                                    [host-only] => 
+                                                )
+
+                                            [reference_time] => 1700403930
+                                        )
+
+                                )
+
+                        )
+
+                )
+
+            [filename:protected] => 
+        )
+
+)
