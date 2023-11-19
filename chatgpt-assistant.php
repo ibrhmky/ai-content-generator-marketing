@@ -169,9 +169,6 @@ function chatgpt_assistant_generate_response(): void {
         )
     );
 
-	file_put_contents(dirname( __FILE__ ) . '/dump.txt', print_r($response, true));
-
-
 	// Check if the API request was successful
     if (is_wp_error($response) || wp_remote_retrieve_response_code($response) !== 200) {
         $error_message = 'Error: An error occurred while retrieving the assistant\'s response from OpenAI.';
