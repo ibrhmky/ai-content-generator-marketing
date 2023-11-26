@@ -13,7 +13,7 @@ function chatgpt_assistant_settings_page(): void
     }
 
 	// Verify nonce
-	$nonce = $_POST['chatgpt_assistant_post_nonce_field'] ?? '';
+	$nonce = sanitize_text_field($_POST['chatgpt_assistant_post_nonce_field']) ?? '';
 
 	if ($nonce && !wp_verify_nonce($nonce, 'chatgpt_assistant_key_nonce')) {
 		// Nonce verification failed, handle the error or exit
@@ -275,7 +275,7 @@ function chatgpt_assistant_validate_api_key($api_key): bool {
 function chatgpt_assistant_remove_api_key() {
 
 	// Verify nonce
-	$nonce = $_POST['chatgpt_assistant_post_nonce_field'] ?? '';
+	$nonce = sanitize_text_field($_POST['chatgpt_assistant_post_nonce_field']) ?? '';
 
 	if ($nonce && !wp_verify_nonce($nonce, 'chatgpt_assistant_key_nonce')) {
 		// Nonce verification failed, handle the error or exit
@@ -304,7 +304,7 @@ add_action('wp_ajax_nopriv_chatgpt_assistant_remove_api_key', 'chatgpt_assistant
 function chatgpt_assistant_setting_action_callback() {
 
 	// Verify nonce
-	$nonce = $_POST['nonce'] ?? '';
+	$nonce = sanitize_text_field($_POST['nonce']) ?? '';
 
 	if ($nonce && !wp_verify_nonce($nonce, 'chatgpt_assistant_settings_nonce')) {
 		// Nonce verification failed, handle the error or exit
@@ -335,7 +335,7 @@ add_action('wp_ajax_nopriv_chatgpt_assistant_setting_action_callback', 'chatgpt_
 function chatgpt_assistant_setting_remove_callback() {
 
 	// Verify nonce
-	$nonce = $_POST['nonce'] ?? '';
+	$nonce = sanitize_text_field($_POST['nonce']) ?? '';
 
 	if ($nonce && !wp_verify_nonce($nonce, 'chatgpt_assistant_settings_nonce')) {
 		// Nonce verification failed, handle the error or exit

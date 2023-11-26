@@ -74,7 +74,7 @@ function chatgpt_assistant_new_post_page(): void {
                                 <input type="text" class="form-control" id="postTitleTextInput" placeholder="Post Title">
                             </div>
                             <div class="col-auto">
-                                <button id="postTitleTextInput_button" class="btn btn-primary mb-3" onclick="sendMessageAPI('postTitleTextInput')" <?php echo $buttons_disabled; ?>>Generate title</button>
+                                <button id="postTitleTextInput_button" class="btn btn-primary mb-3" onclick="sendMessageAPI('postTitleTextInput')" <?php echo esc_attr($buttons_disabled); ?>>Generate title</button>
                                 <button id="postTitleTextInput_load" class="btn btn-primary mb-3 d-none" type="button" disabled>
                                     <span class="spinner-border spinner-border-sm" aria-hidden="true"></span>
                                     <span role="status">Loading...</span>
@@ -90,7 +90,7 @@ function chatgpt_assistant_new_post_page(): void {
                                 <textarea class="form-control" id="postDescriptionTextarea" rows="3" placeholder="Post Description"></textarea>
                             </div>
                             <div class="mb-3 col-auto mn-width-400">
-                                <button id="postDescriptionTextarea_button" class="btn btn-primary mb-3" onclick="sendMessageAPI('postDescriptionTextarea')" <?php echo $buttons_disabled; ?>>Generate description</button>
+                                <button id="postDescriptionTextarea_button" class="btn btn-primary mb-3" onclick="sendMessageAPI('postDescriptionTextarea')" <?php echo esc_attr($buttons_disabled); ?>>Generate description</button>
                                 <button id="postDescriptionTextarea_load" class="btn btn-primary mb-3 d-none" type="button" disabled>
                                     <span class="spinner-border spinner-border-sm" aria-hidden="true"></span>
                                     <span role="status">Loading...</span>
@@ -261,7 +261,7 @@ function chatgpt_assistant_publish_post_from_form()
 {
 
 	// Verify nonce
-	$nonce = $_POST['chatgpt_assistant_post_nonce_field'] ?? '';
+	$nonce = sanitize_text_field($_POST['chatgpt_assistant_post_nonce_field']) ?? '';
 
 	if ($nonce && !wp_verify_nonce($nonce, 'chatgpt_assistant_post_nonce')) {
 		// Nonce verification failed, handle the error or exit

@@ -46,7 +46,7 @@ function chatgpt_assistant_messages_page(): void
     <div class="container-fluid table-responsive">
         <h3 class="page-header-sm">ChatGPT Assistant Previous Messages</h3>
         <table class="wp-list-table table table-auto table-hover previous-messages">
-            <caption><?php echo $total_messages ?> Messages</caption>
+            <caption><?php echo esc_html($total_messages) ?> Messages</caption>
             <colgroup>
                 <col style="width: 3%">
                 <col style="width: 28%">
@@ -93,7 +93,7 @@ function chatgpt_assistant_messages_page(): void
 	            echo '<td class="text-center"><a href="' . esc_url(get_admin_url() . 'post.php?post=' . $message->post_id . '&action=edit') . '" target="_blank">' . esc_html($message->post_id) . '</a></td>';
                 echo '<td class="text-center">' . esc_html($message->date) . '</td>';
                 echo '<td class="text-center">' . esc_html($message->word_count) . '</td>';
-                echo '<td class="view-response text-center"><a class="btn btn-link" data-toggle="collapse" href="#response-'.$message->id.'" role="button" aria-expanded="false" aria-controls="response-'.$message->id.'" onclick="toggleResponse(this)">View</a></td>';
+                echo '<td class="view-response text-center"><a class="btn btn-link" data-toggle="collapse" href="#response-'. esc_html($message->id) .'" role="button" aria-expanded="false" aria-controls="response-'.esc_html($message->id).'" onclick="toggleResponse(this)">View</a></td>';
                 echo '</tr>';
 	            echo '<tr class="collapse ' . esc_attr($row_class) . '" id="response-' . esc_attr($message->id) . '">';
                 echo '<td style="background: white" colspan="7"><pre style="white-space: pre-wrap; word-wrap: break-word;">' . esc_html(print_r(unserialize($message->raw_response), true)) . '</pre></td>';

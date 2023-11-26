@@ -12,7 +12,7 @@ AI Content Generator Marketing is an AI-powered chat assistant for your WordPres
 
 == Description ==
 
-AI Content Generator Marketing is a cutting-edge AI-powered chat assistant for your WordPress website, revolutionizing the way you interact with your users. Leveraging the advanced capabilities of OpenAI's GPT-3 technology, this plugin transforms your website into an interactive hub where users can engage in meaningful conversations, receive instant responses, and access relevant information.
+AI Content Generator Marketing is a cutting-edge AI-powered chat assistant for your WordPress website, revolutionizing the way you interact with your users. Leveraging the advanced capabilities of 3rd party services and rely on OpenAI's ([privacy policy](https://openai.com/policies/privacy-policy) and [terms of use](https://openai.com/policies/terms-of-use)) LLM's via API url [https://api.openai.com/v1/chat/completions](https://api.openai.com/v1/chat/completions), this plugin transforms your website into an interactive hub where users can engage in meaningful conversations, receive instant responses, and access relevant information.
 
 = Key Features =
 
@@ -25,6 +25,8 @@ AI Content Generator Marketing is a cutting-edge AI-powered chat assistant for y
 - **Seamless Post Integration:** Easily integrate AI-generated content into your posts. The assistant can create, refine, and suggest content for your articles, saving you time and enhancing your content quality.
 
 - **Customizable Appearance:** Customize the chat assistant's appearance and behavior to match your website's design and user experience.
+
+- **Choose Between Models:** You can choose between model which is available at [https://api.openai.com/v1/engines](https://api.openai.com/v1/engines)
 
 = How It Works =
 

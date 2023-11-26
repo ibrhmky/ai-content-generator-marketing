@@ -13,13 +13,15 @@
  * Domain Path: /languages
  */
 
+if ( ! defined( 'ABSPATH' ) ) exit; // Exit if accessed directly
+
 // Include the pages and other sections
 require_once plugin_dir_path(__FILE__) . 'pages/chatgpt-assistant-settings.php';
 require_once plugin_dir_path(__FILE__) . 'pages/chatgpt-assistant-history.php';
 require_once plugin_dir_path(__FILE__) . 'pages/chatgpt-assistant-new-post-page.php';
 
 require_once plugin_dir_path(__FILE__) . 'chatgpt-assistant-menu.php';
-if ( ! defined( 'ABSPATH' ) ) exit; // Exit if accessed directly
+
 /**
  * Enqueue Bootstrap assets for your plugin's pages
  */
@@ -115,7 +117,7 @@ function chatgpt_assistant_get_api_key()
 function chatgpt_assistant_generate_response(): void {
 
 	// Verify nonce
-	$nonce = $_POST['nonce'] ?? '';
+	$nonce = sanitize_text_field($_POST['nonce']) ?? '';
 
 	if (!wp_verify_nonce($nonce, 'chatgpt_assistant_ajax_nonce')) {
 		// Nonce verification failed, handle the error or exit
@@ -125,7 +127,7 @@ function chatgpt_assistant_generate_response(): void {
     // Retrieve the message and assistant mode from the request
     $message = isset($_POST['message']) ? sanitize_textarea_field($_POST['message']) : '';
     $system_message = isset($_POST['system_message']) ? sanitize_textarea_field($_POST['system_message']) : '';
-    $location_data = isset($_POST['location_data']) ? sanitize_textarea_field($_POST['location_data']) : '';
+    $location_data = isset($_POST['location_data']) ? sanitize_text_field($_POST['location_data']) : '';
 
     $brand_guidelines = get_option('brandGuideTextarea');
     $company_info = get_option('companyInfoTextarea');
